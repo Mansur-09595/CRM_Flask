@@ -1,0 +1,28 @@
+{% extends '_base.html' %}
+
+
+{% block title %}Пользователи{% endblock title %}
+
+{% block content %}
+  {% for user in users %}
+    <div class="card">
+      <div class="card-header">
+        <span class="font-weight-bold">{{ user.id }}</span> &middot;
+        <span class="text-muted">Имя: {{ user.username }} | @Email: {{ user.email }}</span>
+      </div>
+      <div class="card-body">
+        <p>{{ user.username }}</p>
+        {% if current_user.admin %}
+        <div>
+          
+          <form action="{{ url_for('delete_human', user_id=user.id) }}" method="POST">
+            <input class="btn btn-danger" type="submit" value="Удалить">
+            <a class="btn btn-outline-primary" href="{{ url_for('human_edit', user_id=user.id) }}">Изменить</a>
+          </form>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+    <br />
+  {% endfor %}
+{% endblock content %}

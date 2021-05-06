@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+  {% if current_user.admin %}
+    <p><a href="{{ url_for('human') }}">Администрация пользователей</a></p>
+    <a href="{{ url_for('export_db') }}">Export data base</a>
+  {% endif %}
+
+{% endblock content %}
