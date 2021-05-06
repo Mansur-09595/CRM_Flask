@@ -23,3 +23,13 @@
 `pip install -r requirements.txt`
 
 Для запуска используйте файл run.py
+
+#### Для доступа в admin панель
+
+Введите:
+
+email: admin@mail.ru
+
+password: admin
+
+Предупреждение! Не удаляйте учетную запись admin!
