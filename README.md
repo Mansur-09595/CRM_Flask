@@ -22,9 +22,9 @@
 
 `pip install -r requirements.txt`
 
-###Для доступа в admin панель
+### Для доступа в admin панель
 
-###Введите:
+### Введите:
 
 email: admin@mail.ru
 
