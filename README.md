@@ -1,6 +1,18 @@
-## ООО Тамисаж
+## Центр защиты информации "СЕВЕР"
 
-### Парсинг сайта https://xn--90adear.xn--p1ai/news на Scrapy
+### Создание веб-приложения (сайта) во фреймворке Flask с использованием базы данных SQLite.
+
+Возможности сайта:
+
+Авторизация, регистрация;
+
+Добавление сотрудников;
+
+Просмотр списка сотрудников;
+
+Изменение данных о сотрудников;
+
+Экспорт списка сотрудников в EXCEL-файл.
 
 ### Запуск
 
@@ -10,18 +22,12 @@
 
 `pip install -r requirements.txt`
 
-Для запуска парса используйте команды
+###Для доступа в admin панель
 
-Для csv формата
+###Введите:
 
-`scrapy crawl news_info -o news_info.csv `
+email: admin@mail.ru
 
-Для csv формата
+password: admin
 
-`scrapy crawl news_info -o news_info.csv `
-
-#### Основы функции парса находятся
-
-Scrapy_Pars_MVD/shop/shop/items.py
-
-Scrapy_Pars_MVD/shop/shop/spiders/news_mvd.py
+Предупреждение! Не удаляйте учетную запись admin!
